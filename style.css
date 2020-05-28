@@ -1,0 +1,485 @@
+@font-face
+{
+    font-family: 'Ruben';
+    src: url('fonts/Ruben.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section
+{
+    padding-top: 100px;
+}
+
+header
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+body
+{
+    margin: auto; 
+    text-align: center;
+    background-image: radial-gradient(ellipse at center, #F7BE81, #FF8000, #610B0B);
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+    overflow: scroll;
+    word-wrap: break-word;
+    font-family: 'Crimson Pro', 'Crimson Text', 'Slabo 27px', serif;    
+}
+
+img
+{
+    border: 3px #1C1C1C outset;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px black;
+    margin: 10px;
+    transition: 1s;
+}
+
+.transparent
+{
+    background-color: #F7BE81;
+}
+
+.joueur
+{
+    border: 3px #1C1C1C outset;
+    border-radius: 25px;
+    box-shadow: 8px 8px 5px black;
+    padding: 10px;
+    margin: 10px;
+    background-color: #F7BE81;
+    width: 400px;
+}
+
+.und
+{
+    text-decoration:underline;
+    font-weight : bolder;
+}
+
+.profil
+{
+    border: inherit;    
+    box-shadow: inherit;
+}
+
+#banniere
+{   
+    border: none;
+    box-shadow: none;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1, h2, .ruben
+{
+    font-family: Ruben, Impact, 'Arial Black', 'Times New Roman', sans-serif;
+}
+
+h1
+{
+    font-size: 400%;
+    color: #FFBF00;
+}
+
+h2, #accueil
+{   
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+h3
+{
+    font-size: 150%;
+    color:#151515;
+    text-align: center;
+}
+
+h3 strong, h2 strong, h2 strong, h1, h2, h3
+{
+    font-weight : normal;
+}
+
+p, ul, ol, td, th
+{
+    font-size: 120%;
+}
+
+#accueil
+{
+    text-align: center;
+}
+
+nav
+{
+    border: 3px #1C1C1C outset;
+    background-color: #DF7401;
+    box-shadow: 6px 6px 5px black;
+    max-height: 75px;   
+}
+
+a
+{
+    color: #1C1C1C;
+}
+
+.mentions
+{
+    margin-top: 35px;
+    text-align: center;
+}
+
+nav li
+{
+    padding-left: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+ol, p, ul, td
+{
+    text-align: left;
+}
+
+strong
+{
+    font-weight : normal;
+}
+
+.effet img:hover
+{
+    transform: scale(1.05);
+    box-shadow: 12px 12px 8px black;
+}
+
+/*__________Box____________*/
+
+.box, .box_long, .box_long_r, .ludo, .mode, .bouton_box, .joueur, .navigation, .box_w, .page-nav input:checked ~ ul, #page-nav_p input:checked ~ ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bouton_box
+{
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.box, .mode
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_w
+{
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.box_long
+{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.box_long_r
+{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ludo, .navigation
+{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-nav input:checked ~ ul, #page-nav_p input:checked ~ ul
+{
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.annonce
+{
+    padding: 10px;
+    border: 3px #FE2E2E outset;
+    background-color: #F7BE81;
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px black;
+}
+
+/*__________Logo____________*/
+
+.logo, .tourne
+{
+    border-radius: inherit;
+    border: inherit;
+    box-shadow: inherit;
+    margin: inherit;    
+}
+
+.logo, .mode img
+{
+    max-width: 35px;
+    border-radius: 0px;
+}
+
+.mode img
+{
+    box-shadow: inherit;
+    border:inherit;
+}
+
+.tourne
+{
+    max-width: 20px;
+    transition: 5s;
+}
+
+.tourne:hover
+{
+    transform: rotate(360deg);
+}
+
+/*__________Boutons____________*/
+
+.bouton
+{   
+    color: #1C1C1C;
+    border: 2px #1C1C1C outset;
+    background:linear-gradient(to bottom, #FFBF00 5%, #DF7401 100%);
+    border-radius: 50px;
+    box-shadow: 6px 6px 5px black;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.bouton:hover
+{
+    background:linear-gradient(to bottom, #DF7401 5%, #FFBF00 100%);
+    transform: scale(0.99);
+    box-shadow: none;
+}
+
+/*__________Burger____________*/
+
+.page-nav ul, #page-nav_p ul
+{
+    display: none;    
+    border: 2px #1C1C1C outset;
+    box-shadow: 6px 6px 5px black;
+}
+
+#page-nav_p ul
+{
+    background-color: #DF7401;
+}
+
+.page-nav ul
+{
+    background-color: #F7BE81;
+}
+
+.page-nav ul li, #page-nav_p ul li
+{
+    padding: 10px;
+}
+
+.burger
+{
+    position: relative;
+    top: 0px;
+    margin: auto;
+    z-index: 3;
+}
+
+.page-nav input:checked ~ ul, #page-nav_p input:checked ~ ul
+{
+    position: fixed;
+    top: 75px;
+    margin: auto;
+    z-index: 3;
+}
+
+#page-nav_p input:checked ~ ul li
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#burger_p
+{    
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin: auto;
+    z-index: 3;
+}
+
+.hamburger_tests, #hamburger_p, .hamburger_lcdi, .hamburger_ludo, .hamburger_acces, .hamburger_forum, .hamburger_mentions
+{
+  display: none;
+}
+
+#page-nav_p
+    {
+        display: none;
+    }
+
+.page-nav input
+    {
+        display: none;
+    }
+
+#calendar_p
+{
+    display: none;
+}
+
+
+/*____________Tableau__________*/
+
+
+table, td, th
+{
+    border: 1px black solid;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    padding: 5px;
+}
+/*____________Media query__________*/
+
+
+@media all and (max-width: 799px)
+{   
+    .page-nav input:checked ~ ul, .page-nav input, #page-nav_p input, nav
+    {
+        display: none;
+    }   
+
+    #page-nav_p, #horaires
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #banniere, img, .box_w, .joueur
+    {
+        max-width: 350px;
+        transition: 0s;
+    }
+
+    .effet img:hover
+    {
+        transform: inherit;
+        box-shadow: 8px 8px 5px black;
+    }
+
+    h1
+    {
+        font-size: 230%;
+    }
+
+    h2, #accueil
+    {
+        font-size: 180%;
+    }
+
+    h3
+    {
+        font-size: 150%;
+    }
+
+    .joueur img
+    {
+        width: inherit;
+    }
+
+    body
+    {
+        background-image: radial-gradient(ellipse at center, #F7BE81, #DF7401);
+        top: 250px;
+    }
+
+    .box_long_r
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p, ul, ol, td, th
+    {
+        font-size: 130%;
+        padding-top: 20px;
+    }
+
+    li
+    {
+        padding-top: 30px;
+    }
+
+    section
+    {
+        padding-top: 25px;
+        margin-left: 20px;
+    }
+
+    nav
+    {
+        max-height: inherit;
+    }
+
+    li
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    table
+    {
+        margin-left: 20px;
+    }
+
+    #calendar_g
+    {
+        display: none;
+    }
+
+    #calendar_p
+    {
+        display: block;
+    }
+}
