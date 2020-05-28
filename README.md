@@ -5,6 +5,9 @@ online since February 24, 2020 :
 
 https://le-cercle-des-investigateurs.github.io/
 
+The github page :
+https://github.com/le-cercle-des-investigateurs
+
 
 Volunteer work carried out for the purposes:
 - learn to program;
