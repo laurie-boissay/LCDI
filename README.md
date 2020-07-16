@@ -36,3 +36,6 @@ I carried out user interviews to define their needs. Those who already consult t
 
 Users also want to see added on the site, in the future, a tool like a calendar to manage registrations and events. The Google tool seems restrictive to me. A survey on their forum is underway. The other solution I see would be a site with backend (data processing) and paid hosting.
 
+#__________________________________________________________________________________________
+
+16/07/20 : Learning PHP, adding a include function to print menu.
