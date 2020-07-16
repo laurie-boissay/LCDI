@@ -38,4 +38,4 @@ Users also want to see added on the site, in the future, a tool like a calendar 
 
 #__________________________________________________________________________________________
 
-16/07/20 : Learning PHP, adding a include function to print menu.
+16/07/20 : Learning PHP, adding a include function to display menu.
